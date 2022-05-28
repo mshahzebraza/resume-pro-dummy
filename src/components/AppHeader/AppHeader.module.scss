@@ -1,0 +1,27 @@
+.appHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.brandText {
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.menuIcon {
+	display: flex;
+	height: 0.2rem;
+	width: 3rem;
+	background: #000;
+	position: relative;
+	&::before,
+	&::after {
+		display: flex;
+		height: 0.2rem;
+		width: 3rem;
+		background: #000;
+	}
+
+     &::
+}
