@@ -1,0 +1,13 @@
+.templateGallery {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5rem;
+	.template {
+		flex: 1;
+		// content: "";
+		min-height: 60rem;
+		min-width: 40rem;
+		border: 1px solid blue;
+	}
+}

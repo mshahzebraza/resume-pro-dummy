@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.scss';
+import styles from './App.module.scss';
 import Layout from './components/Layout/Layout';
 import Intro from './components/Intro';
 import NavBar from './components/NavBar';
@@ -11,7 +11,7 @@ import Gallery from './components/Gallery';
 
 function App() {
      return (
-          <div className="App">
+          <div className={styles.App}>
                <Layout />
                <main>
                     <Intro />
@@ -19,7 +19,6 @@ function App() {
                     <InputBanner />
                     <DescriptionBox />
                     <Gallery />
-
                </main>
           </div>
      );

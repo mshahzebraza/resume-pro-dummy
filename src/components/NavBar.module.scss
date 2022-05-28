@@ -1,0 +1,68 @@
+.nav {
+	font-size: 1.8rem;
+	flex-wrap: wrap;
+
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	width: 100%;
+	max-width: 140rem;
+	display: flex;
+	gap: 2rem;
+	justify-content: space-between;
+	align-items: center;
+
+	.ctgList {
+		flex-wrap: wrap;
+		flex: 7;
+		display: flex;
+		justify-content: space-around;
+		gap: 2rem;
+		.ctg {
+		}
+	}
+	.searchBox {
+		flex: 2;
+		display: flex;
+		justify-content: center;
+		.searchIcon {
+		}
+		.searchInput {
+			padding: 1.5rem 3rem;
+			// background: transparent;
+			min-width: 30rem;
+			border: 1px solid #000;
+
+			// border-style: unset;
+		}
+	}
+	&Menu {
+		flex: 0.5;
+		display: flex;
+		justify-content: center;
+		.menuIcon {
+			display: flex;
+			justify-content: flex-end;
+			height: 0.2rem;
+			width: 1.5rem;
+			background: #000;
+			position: relative;
+			&::before,
+			&::after {
+				position: absolute;
+				display: flex;
+				content: "";
+				height: 0.2rem;
+				background: #000;
+			}
+
+			&::before {
+				width: 2rem;
+				transform: translateY(-0.5rem);
+			}
+			&::after {
+				width: 1.25rem;
+				transform: translateY(0.5rem);
+			}
+		}
+	}
+}

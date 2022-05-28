@@ -2,27 +2,31 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	max-width: 150rem;
+	margin: 5rem;
 	width: 100%;
 }
 
 .brandText {
-	font-size: 4rem;
+	font-size: 4.2rem;
 	font-weight: bold;
 }
 
 .menuIcon {
 	display: flex;
-	height: 0.2rem;
-	width: 3rem;
+	height: 0.35rem;
+	width: 4rem;
+	border-radius: 50rem;
 	background: #000;
 	position: relative;
 	&::before,
 	&::after {
 		position: absolute;
 		display: flex;
-		height: 0.2rem;
+		border-radius: 50rem;
+		height: 0.35rem;
 		content: "";
-		width: 3rem;
+		width: 4rem;
 		background: #000;
 	}
 
